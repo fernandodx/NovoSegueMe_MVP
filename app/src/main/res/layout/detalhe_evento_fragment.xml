@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorlight">
+
+    <ImageView android:id="@+id/img_evento"
+               android:layout_width="match_parent"
+               android:layout_height="220dp"
+               android:src="@mipmap/ic_launcher"
+               android:scaleType="fitXY"
+               android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorSecundaryDark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/ic_calendario"/>
+
+                <TextView android:id="@+id/data_evento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 de Março de 2014"
+                    android:textColor="@color/colorBranco"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/ic_hora"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18:00"
+                    android:textColor="@color/colorBranco"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/hora_evento"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/ic_local"/>
+
+                <TextView android:id="@+id/nome_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poróquia Nossa Senhora Mãe"
+                    android:textColor="@color/colorBranco"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_view_descricao"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@color/colorBranco"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:foreground="?attr/selectableItemBackground">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccent2"/>
+
+
+                    <TextView android:id="@+id/descricao_evento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Teste o teste o teste"
+                        android:textSize="14dp"
+                        android:padding="8dp"/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:id="@+id/card_view_observacao"
+                card_view:cardBackgroundColor="@color/colorBranco"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:foreground="?attr/selectableItemBackground">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccent"/>
+
+
+                    <TextView android:id="@+id/obs_evento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Teste o teste o teste"
+                        android:textSize="14dp"
+                        android:padding="8dp"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

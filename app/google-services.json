@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "933415693899",
+    "firebase_url": "https://segue-me-pnsmdp.firebaseio.com",
+    "project_id": "firebase-segue-me-pnsmdp",
+    "storage_bucket": "firebase-segue-me-pnsmdp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933415693899:android:3becd80f6106aeb8",
+        "android_client_info": {
+          "package_name": "com.segueme.seguemepsul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933415693899-jifl4kp32achgrfnqjieaq2f5k9edb5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [{ "current_key": "" }],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
