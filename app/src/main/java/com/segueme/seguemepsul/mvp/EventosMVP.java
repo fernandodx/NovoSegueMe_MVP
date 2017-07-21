@@ -21,6 +21,7 @@ public interface EventosMVP<T> extends BaseMVP<T> {
         void atualizarListaEventos(List<Evento> lista);
         void showLoading(String titulo, int tipo);
         void hideLoading();
+        void showAlerta(String alerta);
 
     }
 

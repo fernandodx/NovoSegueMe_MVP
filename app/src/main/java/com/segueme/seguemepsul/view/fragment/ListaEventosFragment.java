@@ -98,6 +98,11 @@ public class ListaEventosFragment extends BaseFragment
         loading.hide();
     }
 
+    @Override
+    public void showAlerta(String alerta) {
+
+    }
+
 
     @Override
     public void clickEvento(int position, View view) {

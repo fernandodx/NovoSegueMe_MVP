@@ -34,6 +34,7 @@ public class EventosPresenter extends BasePresenter<EventosMVP.RequiredViewOpsEv
     public void onListaEventos(List<Evento> lista) {
         requiredViewOps.get().atualizarListaEventos(lista);
         requiredViewOps.get().hideLoading();
+        requiredViewOps.get().showAlerta("Lista atualizada!");
     }
 
 
